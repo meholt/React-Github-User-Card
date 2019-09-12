@@ -11,9 +11,11 @@ function App() {
   useEffect(() => {
     axios
       .get('https://api.github.com/users/meholt')
-      .then(res => setUserData(res.data))
+      .then(res => 
+        setUserData(res.data))
       // console.log(userData)
-      .catch(err => console.log(err));
+      .catch(err => 
+        console.log(err));
   });
 
   return (
